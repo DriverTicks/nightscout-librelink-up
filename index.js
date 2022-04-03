@@ -209,7 +209,7 @@ async function uploadToNightscout(measurementData) {
         });
     });
 
-    const url = "https://" + NIGHTSCOUT_URL + "/api/v1/entries"
+    const url = "http://" + NIGHTSCOUT_URL + "/api/v1/entries"
     try {
         const response = await axios.post(url,
             formattedMeasurements,
